@@ -1,0 +1,19 @@
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #0d0d21, #10102f);
+    color: lightgray;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+}
