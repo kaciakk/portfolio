@@ -2,7 +2,7 @@ import "./app.scss"
 import { Hero } from "./components/hero/Hero";
 import { Navbar } from "./components/navbar/Navbar";
 import Projects  from "./components/projects/Projects";
-import Contact from "./contact/Contact";
+import Contact from "./components/contact/Contact";
 import AboutMe from "./components/aboutme/AboutMe";
 const App = () => {
   return <div>

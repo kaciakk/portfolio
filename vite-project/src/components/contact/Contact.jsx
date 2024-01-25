@@ -1,5 +1,6 @@
-import React from 'react'
+import { useRef, useState } from 'react'
 import { motion} from "framer-motion";
+import emailjs from '@emailjs/browser';
 import "./contact.scss";
 const variants = {
     inital:{
@@ -20,6 +21,20 @@ const variants = {
 
 
 const Contact = () => {
+    const formRef = useRef();
+    const[error, setError] = useState(false)
+    const[success, setSuccess] = useState(false)
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_dk3czgt', 'template_2dxnpti', formRef.current, 'R1AnR19wYCsFvTnvL')
+          .then((result) => {
+              setSuccess(true)
+          }, (error) => {
+            setError(true)
+          });
+      };
+
   return (
     <motion.div className='contact'>
     <div className="textContainer">
@@ -39,10 +54,13 @@ const Contact = () => {
         
     </div>
     <div className="formContainer">
-        <form>
-            <input type='text' required placeholder='Email'></input>
-            <textarea rows={8} placeholder='Message'/>
+        
+    <form ref={formRef} onSubmit={sendEmail}>
+            <input type='text' required placeholder='Email' name='email'></input>
+            <textarea rows={8} placeholder='Message' name='message'/>
             <button>Submit</button>
+            {error && "Error"}
+            {success && "Success"}
         </form>
     </div>
     </motion.div>

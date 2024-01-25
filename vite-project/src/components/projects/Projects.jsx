@@ -25,7 +25,7 @@ const items = [
 const Single = ({item}) => {
     const ref = useRef();
     const {scrollYProgress} = useScroll({ target: ref});
-    const y = useTransform(scrollYProgress, [0,1], [-350,350]);
+    const y = useTransform(scrollYProgress, [0,1], [-300,300]);
     return (
         <section>
             <div className='container'>

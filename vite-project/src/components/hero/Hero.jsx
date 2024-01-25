@@ -16,9 +16,13 @@ const textVariants = {
         },
     },
     scrollButton:{
+        initial:{
+            opacity:0,
+        },
         opacity: 0,
         y:18,
         transition: {
+            delay: 0.5,
             duration: 2,
             repeat:Infinity
     }
@@ -36,8 +40,8 @@ export const Hero = () => {
          <motion.h2 variants={textVariants}>Maciej Włosek</motion.h2>
          <motion.h1 variants={textVariants}>Web developer</motion.h1>
          <motion.div className='buttons'>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
-            <motion.button variants={textVariants}>CV</motion.button>
+            <motion.button variants={textVariants} whileHover={{scale: 1.1}}>Contact Me</motion.button>
+            <motion.button variants={textVariants} whileHover={{scale: 1.1}}>CV</motion.button>
          </motion.div>
         </motion.div>
         <div className='arrowContainer'> <motion.img variants={textVariants} animate='scrollButton' src='/arrow-down.png' alt='' /></div>
