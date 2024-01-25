@@ -1,107 +1,109 @@
 @import "../../app.scss";
-.hero {
-    height: calc(100vh - 100px);
-    overflow: hidden;
-    position: relative;
-
-
-    .wrapper {
+.hero-container{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    
+    .hero-wrapper {
+        margin-top: 55px;
+        width: 1100px;
+        height: 500px;
         display: flex;
+        justify-content: space-around;
         align-items: center;
-        max-width: 1366px;
-        height: 100%;
-        margin: auto;
         
 
-        .textContainer {
-            width: 50%;
-            height: 100%;
+        @include mobile{
+            margin-top: 0px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            gap: 40px;
+            width: auto;
+            height: auto;
+        }
+       
+        .textContainer {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap:20px;
+            width: 500px;
+            height: 400px;
+
             @include mobile{
-                height: 50%;
-                width: 100%;
-                gap: 25px;
-                padding-top: 80px;
-                padding-left: 95px;
-                align-items: center;
                 text-align: center;
+                width: 300px;
+            height: 400px;
+                gap:10px;
             }
-            h2 {
-            font-size: 35px;
-            color: rgb(136, 74, 197);
-            letter-spacing: 10px;
-              }
+
             h1{
-                font-size: 88px;
+                font-size: 80px;
 
-            @include mobile{
-                font-size: 44px;
+                @include mobile{
+                    font-size: 40px;
                 }
             }
-            .buttons {
-                 @include mobile{
-                    
-                    }
-                button {
-                  padding: 20px;
-                  border: 1px solid white;
-                  border-radius: 10px;
-                  background-color: transparent;
-                  color: white;
-                  margin-right: 20px;
-                  cursor: pointer;
-                  font-weight: 300;
+            h2{
+                font-size: 60px;
+                @include mobile{
+                    font-size: 25px;
+                }
+            }
+            h3{
+                font-size: 25px;
+                @include mobile{
+                    font-size: 15px;
+                }
+            }
 
-                  @include mobile{
-                    margin-right: 5px;
-                  }
+            .buttons {
+                @include mobile{
+                    margin-top: 20px;
+                }
+                button {
+                height: 40px;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid white;
+                border-radius: 10px;
+                background-color: transparent;
+                color: white;
+                cursor: pointer;
+
+               
+
                 }
               }
-            img{
-                width: 40px;
-                height: 40px;
            
-            }
         }
     }
     .imageContainer {
-        border-radius: 1%; /* Obramowanie okrągłe */
-        overflow: hidden; /* Zapewnia, żeby obraz nie wystawał poza obramowanie okrągłe */
-        
-        
+        margin-top: 90px;
+        height: 450px;
+        width: 450px;
+
+        @include mobile{
+            margin-top: 0px;
+            height: 300px;
+            width: 300px;
+        }
     }
 
     .imageContainer img {
-        width: 25%; 
+        width: 450px; 
         border-radius: 50%;
-        position: absolute;
-        top:70px;
-        right: 350px;
-
         @include mobile{
-        width: 60%; 
-        border-radius: 50%;
-        position: absolute;
-        top:20px;
-        right: 80px;
+            height: 300px;
+            width: 300px;
         }
+
 
     }
     .arrowContainer{
-        position: relative;
-        bottom:-350px;
-        right:50px;
-        @include mobile{
-            position: relative;
-        bottom:-300px;
-        right:160px;
-          }
+       
         img{
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
         }
     }
 }

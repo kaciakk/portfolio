@@ -18,7 +18,7 @@ section{
     scroll-snap-align: center;
 }
 @mixin mobile{
-    @media (max-width:738px){
+    @media (max-width:850px){
         @content;
     }
 }

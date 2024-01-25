@@ -4,7 +4,7 @@ export const Navbar = () => {
   return (
     <div className='navbar'>
      <div className='wrapper'>
-        <span>Logo</span>
+        <span><a href='#' target='_blank'><img src="/logo.png" alt="" /></a></span>
         <div className='social'>
             <a href='https://www.linkedin.com/in/maciej-w%C5%82osek/' target='_blank'><img src="/linkedin-sign.png" alt="" /></a>
             <a href='https://github.com/kaciakk' target='_blank'><img src="/github-sign.png" alt="" /></a>
