@@ -5,22 +5,42 @@ const items = [
     {
         id:1,
         title:'Car Rental',
-        img:'/carciak.png',
+        img:'https://i.ibb.co/Tq8Dk8j/carciak.png',
         desc:'A car rental website based on the MERN technology stack, which includes a React.js-based frontend, a Node.js-based backend with the Express.js framework, and a MongoDB database.'
     },
     {
         id:2,
-        title:'dupa2',
-        img:'https://tappy.pl/wp-content/uploads/2021/02/AdobeStock_42261016.jpeg',
-        desc:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit optio illum, impedit consequatur tempora vero laudantium porro placeat molestias maxime quod explicabo non incidunt, ipsam eum libero. Voluptatibus, accusamus mollitia.'
+       title:'EverMemo',
+       img:'https://i.ibb.co/q0BtppW/memo.png',
+       desc:'One of my initial projects was a note-taking web application developed using React and TypeScript.'
+       },
+    {
+        id:3,
+        title:'Tic Tac Toe',
+        img:'https://i.ibb.co/v4XY8R4/tick-tack-toe.png',
+        desc:'One of the projects I worked on while learning JavaScript, HTML, and CSS was a Tic Tak Toe game.'
         },
      {
-         id:3,
-        title:'dupa3',
-        img:'https://tappy.pl/wp-content/uploads/2021/02/AdobeStock_42261016.jpeg',
-        desc:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit optio illum, impedit consequatur tempora vero laudantium porro placeat molestias maxime quod explicabo non incidunt, ipsam eum libero. Voluptatibus, accusamus mollitia.'
+         id:4,
+        title:'R-P-S',
+        img:'https://i.ibb.co/CVP9j7k/roc-paper-scissors.png',
+        desc:'One of the projects I worked on while learning JavaScript, HTML, and CSS was a Rock Paper Scissors game.'
         },
+        {
+            id:5,
+           title:'Snake',
+           img:'https://i.ibb.co/xXrdrcs/snake1.png',
+           desc:'One of the projects I worked on while learning JavaScript, HTML, and CSS was a Snake game.'
+           },
+          
+           {
+            id:6,
+           title:'Hangman',
+           img:'https://i.ibb.co/YyqN4pV/hangman.png',
+           desc:'One of my initial projects was a note-taking web application developed using React and TypeScript.'
+           },
 ];
+
 
 const Single = ({ item }) => {
     const ref = useRef();
@@ -39,7 +59,7 @@ const Single = ({ item }) => {
                 <motion.div className="textContainer" style={{y}} >
                     <h2 >{item.title}</h2>
                     <p>{item.desc}</p>
-                    <motion.button whileHover={{scale:1.3}} whileTap={{scale:0.8}}>Demo</motion.button>
+                    <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}}>Demo</motion.button>
                 </motion.div>
                 </div>
            </div> 
