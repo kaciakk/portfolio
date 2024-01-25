@@ -1,9 +1,8 @@
 @import "../../app.scss";
 .hero-container{
-    height: 800px;
+    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
-    
     .hero-wrapper {
         margin-top: 55px;
         width: 1100px;
@@ -11,6 +10,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        position: absolute;
+        
         
 
         @include mobile{
@@ -28,15 +29,18 @@
             gap:20px;
             width: 500px;
             height: 400px;
+          
 
             @include mobile{
                 text-align: center;
-                width: 300px;
-            height: 400px;
+                width: 350px;
+                height: 500px;
                 gap:10px;
             }
+        
 
             h1{
+                
                 font-size: 80px;
 
                 @include mobile{
@@ -84,8 +88,8 @@
 
         @include mobile{
             margin-top: 0px;
-            height: 300px;
-            width: 300px;
+            height: 250px;
+            width: 250px;
         }
     }
 
@@ -93,17 +97,22 @@
         width: 450px; 
         border-radius: 50%;
         @include mobile{
-            height: 300px;
-            width: 300px;
+            height: 250px;
+            width: 250px;
         }
 
 
     }
     .arrowContainer{
-       
+       position: relative;
+       top:150px;
+       right: 280px;
         img{
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
+        @include mobile{
+          display: none;
+            }
         }
     }
 }

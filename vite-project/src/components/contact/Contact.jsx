@@ -38,18 +38,18 @@ const Contact = () => {
   return (
     <motion.div className='contact'>
     <div className="textContainer">
-        <h1>HI ITS ME</h1>
+        <h1>Contact me!</h1>
         <div className="item">
             <h2>Mail</h2>
-            <span>Email</span>
+            <span>wlomcj@gmail.com</span>
         </div>
         <div className="item">
             <h2>Adres</h2>
-            <span>Adres</span>
+            <span>32-300 Olkusz, małopolska</span>
         </div>
         <div className="item">
             <h2>Phone</h2>
-            <span>Phone</span>
+            <span>+48 737-770-872</span>
         </div>
         
     </div>
@@ -58,7 +58,7 @@ const Contact = () => {
     <form ref={formRef} onSubmit={sendEmail}>
             <input type='text' required placeholder='Email' name='email'></input>
             <textarea rows={8} placeholder='Message' name='message'/>
-            <button>Submit</button>
+            <motion.button whileHover={{scale:1.3}} whileTap={{scale:0.8}}>Submit</motion.button>
             {error && "Error"}
             {success && "Success"}
         </form>

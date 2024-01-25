@@ -2,24 +2,25 @@
 
 .projects{
     position: relative;
-    @include mobile {
-        
-        padding-top: 50px;
-      }
-    .progress{
+    .progress {
         position: sticky;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         padding-top: 50px;
         text-align: center;
-        color: white;
-        font-size: 30px;
+        color: orange;
+        font-size: 36px;
+        
+
         @include mobile {
-            padding-top: 80px;
-            font-size: 24px;
+            padding-top: calc(100vh - 210px);
+            font-size: 22px;
+            
+          
           }
 
      .progressBar{
+        
         height: 10px;
         background-color: white;
        
@@ -34,43 +35,44 @@
         height: 100%;
         overflow: hidden;
 
-       @include mobile {
+      .wrapper {
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
         display: flex;
-        
-        
-      }
-
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+  
+        @include mobile {
+            flex-direction: column;
+          }
       .imageContainer {
         flex: 1;
         height: 50%; // zmieniono na 50% dla urządzeń mobilnych
         @include mobile {
-          height: 100%; // zmieniono na 100% dla urządzeń mobilnych
-        }
-      }
-      
-        .wrapper {
-            max-width: 1366px;
-            height: 100%;
-            margin: auto;
+            width: 250;
+            max-height: 280px;
+            padding-top: 50px;
+            padding-left: 5px;
+            padding-right: 5px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 50px;
-      
-            @include mobile {
-              flex-direction: column;
-            }
-        }
+          }
+            
         img {
             flex: 1;
-            height: 100%; // zmieniono na 100% dla urządzeń mobilnych
+            height: 100%;
             object-fit: cover;
             @include mobile {
-              height: auto; 
-              width: 300px;// zmieniono na auto dla urządzeń mobilnych
-              padding-top: 100px;
+                width: auto; // Dopasowanie szerokości do proporcji oryginalnych
+                height: auto; // Dopasowanie wysokości do proporcji oryginalnych
+                max-width: 100%; // Ustawienie maksymalnej szerokości na 100% kontenera
+                max-height: 100%; // 
+             
             }
           }
+        }
           
         .textContainer{
             flex: 1;
@@ -78,18 +80,16 @@
             flex-direction: column;
             gap: 20px;
             @include mobile {
-                margin-top: 200px;
-                display: flex;
-                justify-content: center;
-                align-self: center;
-                text-align: center;
-                gap: 10px;
+               transform: none !important;
+               padding: 10px;
+               align-items: center;
+               text-align: center;
               }
             
             h2 {
                 font-size: 72px;
                 @include mobile {
-                    font-size: 32px;
+                    font-size: 30px;
                   }
             }
             p {
@@ -111,4 +111,5 @@
         
     }
     
+}
 }
