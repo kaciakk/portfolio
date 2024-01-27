@@ -12,7 +12,7 @@ const items = [
         id:2,
        title:'EverMemo',
        img:'https://i.ibb.co/q0BtppW/memo.png',
-       desc:'One of my initial projects was a note-taking web application developed using React and TypeScript.'
+       desc:'Dne of my initial projects was a note-taking web application developed using React and TypeScript.'
        },
     {
         id:3,
