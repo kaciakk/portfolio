@@ -6,38 +6,43 @@ const items = [
         id:1,
         title:'Car Rental',
         img:'https://i.ibb.co/Tq8Dk8j/carciak.png',
-        desc:'A car rental website based on the MERN technology stack, which includes a React.js-based frontend, a Node.js-based backend with the Express.js framework, and a MongoDB database.'
+        desc:'A car rental website based on the MERN technology stack. Work in progress...',
+        site:'https://kaciak-tic-tac-toe.netlify.app'
     },
     {
         id:2,
        title:'EverMemo',
        img:'https://i.ibb.co/q0BtppW/memo.png',
-       desc:'Dne of my initial projects was a note-taking web application developed using React and TypeScript.'
+       desc:'One of my initial projects was a note-taking web application developed using React and TypeScript.'
        },
     {
         id:3,
         title:'Tic Tac Toe',
         img:'https://i.ibb.co/v4XY8R4/tick-tack-toe.png',
-        desc:'One of the projects I worked on while learning JavaScript, HTML, and CSS was a Tic Tak Toe game.'
+        desc:'One of the projects I worked on while learning JavaScript, HTML, and CSS was a Tic Tak Toe game.',
+        site:'https://kaciak-tic-tac-toe.netlify.app'
         },
      {
          id:4,
         title:'R-P-S',
         img:'https://i.ibb.co/CVP9j7k/roc-paper-scissors.png',
-        desc:'One of the projects I worked on while learning JavaScript, HTML, and CSS was a Rock Paper Scissors game.'
+        desc:'One of the projects I worked on while learning JavaScript, HTML, and CSS was a Rock Paper Scissors game.',
+        site:'https://kaciak-rock-paper-scissors.netlify.app'
         },
         {
             id:5,
            title:'Snake',
            img:'https://i.ibb.co/xXrdrcs/snake1.png',
-           desc:'One of the projects I worked on while learning JavaScript, HTML, and CSS was a Snake game.'
+           desc:'One of the projects I worked on while learning JavaScript, HTML, and CSS was a Snake game.',
+           site:'https://kaciak-snake.netlify.app'
            },
           
            {
             id:6,
            title:'Hangman',
-           img:'https://i.ibb.co/YyqN4pV/hangman.png',
-           desc:'One of my initial projects was a note-taking web application developed using React and TypeScript.'
+           img:'https://i.ibb.co/q7jmY0v/hangman.png',
+           desc:'One of my initial projects was a note-taking web application developed using React and TypeScript.',
+           site:'https://kaciak-hangman.netlify.app'
            },
 ];
 
@@ -59,7 +64,9 @@ const Single = ({ item }) => {
                 <motion.div className="textContainer" style={{y}} >
                     <h2 >{item.title}</h2>
                     <p>{item.desc}</p>
+                    <a href={item.site} target="_blank" rel="noopener noreferrer">
                     <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}}>Demo</motion.button>
+                    </a>
                 </motion.div>
                 </div>
            </div> 
