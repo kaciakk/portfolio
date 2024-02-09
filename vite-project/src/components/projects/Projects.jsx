@@ -4,14 +4,14 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion"
 const items = [
     {
         id:1,
-        title:'Car Rentala',
+        title:'Car Rentalaaxca',
         img:'https://i.ibb.co/Tq8Dk8j/carciak.png',
         desc:'A car rental website based on the MERN technology stack. Work in progress...',
         site:'https://kaciak-tic-tac-toe.netlify.app'
     },
     {
         id:2,
-       title:'EverMemo',
+       title:'EverMemoaads',
        img:'https://i.ibb.co/q0BtppW/memo.png',
        desc:'One of my initial projects was a note-taking web application developed using React and TypeScript.'
        },
