@@ -4,7 +4,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion"
 const items = [
     {
         id:1,
-        title:'Car Rental',
+        title:'Car Rentala',
         img:'https://i.ibb.co/Tq8Dk8j/carciak.png',
         desc:'A car rental website based on the MERN technology stack. Work in progress...',
         site:'https://kaciak-tic-tac-toe.netlify.app'
