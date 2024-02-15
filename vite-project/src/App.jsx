@@ -4,6 +4,7 @@ import { Navbar } from "./components/navbar/Navbar";
 import Projects  from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 
+
 const App = () => {
   return <div>
     <section id="Homepage">

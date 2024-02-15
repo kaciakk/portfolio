@@ -21,6 +21,7 @@ const variants = {
 
 
 const Contact = () => {
+ 
     const formRef = useRef();
     const[error, setError] = useState(false)
     const[success, setSuccess] = useState(false)

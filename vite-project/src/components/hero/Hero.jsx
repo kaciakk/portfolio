@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import "./hero.scss"
 import { motion } from "framer-motion"
 
 
 export const Hero = () => {
+  const handleCVDownload = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = '/resume.pdf';
+    downloadLink.download = 'resume.pdf';
+    downloadLink.click();
+  };
+
 const text1 = "HI!".split(" ");
 const text2 = "     I am Maciej".split(" ");
 const text3 = "            Student of computer science at the Cracow University of Technology.".split(" ");
@@ -44,9 +51,11 @@ const text5 = "                                    Currently looking for my firs
          <motion.span initial = {{opacity:0}} animate={{opacity:1}} transition={{duration: 0.25, delay: i/10}}  key={i} > {el}{" "}
          </motion.span>))}</h3>
          <div className='buttons'>
-            <motion.button whileHover={{scale:1.3}} whileTap={{scale:0.8}}>Contact Me</motion.button>
-            <motion.button whileHover={{scale:1.3}} whileTap={{scale:0.8}}>CV</motion.button>
+ 
+            <motion.button whileHover={{scale:1.2}} whileTap={{scale:0.9}} onClick={handleCVDownload}>CV</motion.button>
+     
             </div>
+            
             <div className='arrowContainer'>
             <motion.img  src='/arrow-down.png'  alt='' animate={{ y: [-20, 20, -20], opacity: [1, 0, 1]
     }} 
