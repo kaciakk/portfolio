@@ -1,8 +1,54 @@
-# React + Vite
+# 💼 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **personal portfolio website** built with **React**, **SCSS**, and **Vite**.
 
-Currently, two official plugins are available:
+The website showcases projects, skills, and contact information in a clean and structured layout.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 🎮 Live Demo
+
+🔗 Live: https://portfolio-kaciak.netlify.app/
+
+
+---
+
+## 📸 Preview
+
+<img width="800" height="450" alt="ezgif com-video-to-gif-converter (1)" src="https://github.com/user-attachments/assets/ccb443eb-09c7-417a-8095-5008c91c63bd" />
+
+
+---
+
+## 📌 About The Project
+
+This portfolio website was created to present my work, skills, and projects in a simple and visually appealing way.
+
+The application is divided into reusable components and sections, following a modular structure.
+
+---
+
+## ✨ Features
+
+- 🧭 Navigation bar with smooth scrolling
+- 🏠 Hero section (introduction)
+- 💻 Projects section
+- 📬 Contact section
+- 📱 Fully responsive design
+- 🎨 SCSS styling with modular structure
+- ⚡ Fast performance with Vite
+
+---
+
+## 🧩 Project Structure
+
+```bash
+src/
+ ├── components/
+ │   ├── hero/
+ │   ├── navbar/
+ │   ├── projects/
+ │   └── contact/
+ ├── App.jsx
+ ├── main.jsx
+ └── styles
